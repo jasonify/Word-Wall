@@ -1,10 +1,14 @@
-let express = require('express');
-var app = express();
-var routes = require("./routes");
+const  express = require('express');
+const  app = express();
+const  routes = require("./routes");
+const path = require('path');
 
 app.use("/api", routes);
+
+// Setup static routing:
+app.use("/static", express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
-  res.send("Hello world2!");
+  res.send("Hello world3!");
 });
 
 app.listen(3030, () => {
