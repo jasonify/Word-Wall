@@ -17,16 +17,16 @@ DB mocks:
 #4 ----- OPS ---
 [ ] knodemon app.js ? bable?
 
-#4 --- FAIL OVER --
+#5 --- FAIL OVER --
 - no react
 - no auth
 - no postgres (just store in array in node memory :'( ) 
 
 
-
-Hours (50 mins):
+### Hours (50 mins):
 
 [x] - Setup v1 project + simple static file loading | Felt Good | Fialy Focused
+[\] - 30 mins -- adding post endpoint.
 
 
 ### Helpful Resources:
