@@ -25,8 +25,9 @@ DB mocks:
 
 ### Hours (50 mins):
 
-[x] - Setup v1 project + simple static file loading | Felt Good | Fialy Focused
-[\] - 30 mins -- adding post endpoint.
+[x] Setup v1 project + simple static file loading | Felt Good | Fairly Focused
+[x] 30 mins -- adding post endpoint, more or less working. Learned that body-parse gotta register before routes | medium |  Lower focused 
+
 
 
 ### Helpful Resources:
