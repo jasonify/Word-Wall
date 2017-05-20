@@ -30,3 +30,11 @@ Hours (50 mins):
 
 
 
+
+### Helpful Resources:
+
+https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters
+https://socket.io/get-started/chat/
+https://expressjs.com/en/starter/static-files.html
+
+
