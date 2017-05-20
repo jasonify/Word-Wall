@@ -11,7 +11,6 @@ module.exports = {
     var word = req.body.word;
     console.log('word', word);
     words.push(word);
-    // res.sendStatus(200);
     res.json({
       success: true
     });

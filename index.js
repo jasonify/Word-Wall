@@ -7,9 +7,9 @@ const bodyParser = require('body-parser');
 
 // Setup our libraries
 const port = process.env.PORT || 3030;
-app.use("/api", routes);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+app.use("/api", routes);
 
 // Register  static routing:
 app.use("/static", express.static(path.join(__dirname, 'public')));
