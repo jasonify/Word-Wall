@@ -1,5 +1,5 @@
 #1  Build server api endpoints
-mock:
+DB mocks:
 - get list of items
 - add to list of items
 - setup postgres
@@ -14,6 +14,8 @@ mock:
 [ ] Quick Logo
 
 
+#4 ----- OPS ---
+[ ] knodemon app.js ? bable?
 
 #4 --- FAIL OVER --
 - no react
@@ -23,6 +25,8 @@ mock:
 
 
 Hours (50 mins):
+
+[x] - Setup v1 project + simple static file loading | Felt Good | Fialy Focused
 
 
 
