@@ -29,8 +29,6 @@ Hours (50 mins):
 [x] - Setup v1 project + simple static file loading | Felt Good | Fialy Focused
 
 
-
-
 ### Helpful Resources:
 
 https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters
