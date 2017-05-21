@@ -27,6 +27,8 @@ DB mocks:
 
 [x] Setup v1 project + simple static file loading | Felt Good | Fairly Focused
 [x] 30 mins -- adding post endpoint, more or less working. Learned that body-parse gotta register before routes | medium |  Lower focused 
+[ ]  - Make sure to use X-www-form-urlencoded for postman instead of form-data, otherwise need .multipart() 
+Maybe intead use busboy to parse multipart forms?
 
 
 
@@ -36,4 +38,6 @@ https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters
 https://socket.io/get-started/chat/
 https://expressjs.com/en/starter/static-files.html
 
+
+https://www.robinwieruch.de/minimal-react-webpack-babel-setup/
 

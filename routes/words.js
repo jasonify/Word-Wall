@@ -9,10 +9,12 @@ module.exports = {
   // Stores a word in our words list
   postWord: function(req, res){
     var word = req.body.word;
+    console.log('body', req.body);
     console.log('word', word);
     words.push(word);
     res.json({
-      success: true
+      success: true,
+      words: words
     });
   }
 }

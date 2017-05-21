@@ -1,3 +1,9 @@
+## Good Tip:
+
+```
+npm init -y
+```
+
 ## Setup
 ``` 
 https://babeljs.io/docs/plugins/preset-es2017/
