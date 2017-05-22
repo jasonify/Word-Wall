@@ -7,10 +7,10 @@ class App extends Component {
   componentDidMount() {
 
     axios.post('http://localhost:3030/api/word', {
-      word: 'Flintstone'
+      word: 'Flintstone333'
     })
     .then(function (response) {
-      console.log(response);
+      console.log('res post', response);
     })
     .catch(function (error) {
       console.log('error', error);
