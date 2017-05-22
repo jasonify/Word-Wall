@@ -34,11 +34,10 @@ class App extends Component {
   }
 
   render() {
-    var wordEls = [];
-    let words = this.state.words;
-    words.forEach((word)=> {
-      console.log( word);
-      wordEls.push(<div> {word}  </div>);
+    const wordEls = this.state.words.map((word, index) => {
+                                         const key = "word-"+word+index;
+                                         console.log(key);
+                                         return <span key={key}> {word} </span>
     });
     // for(var ii = 0; ii < 
     return (
@@ -48,7 +47,6 @@ class App extends Component {
           <h2>Word Wall /</h2>
         </div>
         <p className="App-intro">
-         
           {wordEls}
         </p>
       </div>
