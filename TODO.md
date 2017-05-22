@@ -41,3 +41,8 @@ https://expressjs.com/en/starter/static-files.html
 
 https://www.robinwieruch.de/minimal-react-webpack-babel-setup/
 
+
+
+https://github.com/facebookincubator/create-react-app
+npm install -g create-react-app
+
