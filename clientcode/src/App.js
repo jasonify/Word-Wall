@@ -44,10 +44,23 @@ class App extends Component {
     */
   }
 
+
+  handleClick(e){
+    e.preventDefault();
+    console.log("Click!");
+    console.log('word', this.state.word);
+  }
+
+  handleChange(event){
+    const word = event.target.value;
+    // console.log('event', word);
+    this.setState({ word});
+  }
+
   render() {
     const wordEls = this.state.words.map((word, index) => {
       const key = "word-"+word+index;
-      console.log(key);
+      // console.log(key);
       return <span className='word' key={key}> {word} </span>
     });
     // for(var ii = 0; ii < 
@@ -56,6 +69,10 @@ class App extends Component {
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Word Wall /</h2>
+          <input type="text" value={this.state.word} onChange={this.handleChange.bind(this)}/>
+          <a href="#" onClick={this.handleClick.bind(this)}>
+            Add Word
+          </a>
         </div>
         <p className="App-intro">
           {wordEls}
