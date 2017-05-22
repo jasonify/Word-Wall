@@ -11,7 +11,6 @@ class App extends Component {
     };
   }
 
-
   addWord(word) {
     var self = this;
     axios.post('http://localhost:3030/api/word', {
@@ -30,25 +29,22 @@ class App extends Component {
   }
   componentDidMount() {
 
-    this.addWord("wazza");
-
-    /*
     axios.get('http://localhost:3030/api/words')
     .then(res => {
       console.log('res', res);
       const words = res.data.results;
-      // const posts = res.data.data.children.map(obj => obj.data);
-      // console.log('posts', posts);
-      this.setState({ words });
+      this.setState({ words , currentWord: "" });
     });
-    */
   }
 
 
   handleClick(e){
     e.preventDefault();
-    console.log("Click!");
+    console.log("Adding word on Click!");
     console.log('word', this.state.word);
+    this.addWord(this.state.word);
+    this.setState({currentWord: ""});
+    this.refs.wordInput.value = "";
   }
 
   handleChange(event){
@@ -69,7 +65,7 @@ class App extends Component {
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Word Wall /</h2>
-          <input type="text" value={this.state.word} onChange={this.handleChange.bind(this)}/>
+          <input type="text"  ref="wordInput"  onChange={this.handleChange.bind(this)}/>
           <a href="#" onClick={this.handleClick.bind(this)}>
             Add Word
           </a>
