@@ -5,6 +5,18 @@ import axios from 'axios';
 
 class App extends Component {
   componentDidMount() {
+
+    axios.post('http://localhost:3030/api/word', {
+      word: 'Flintstone'
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log('error', error);
+    });
+
+
     axios.get('http://localhost:3030/api/words')
     .then(res => {
       console.log('res', res);
