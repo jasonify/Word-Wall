@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from "./classic car-bw.jpg";
 import './App.css';
 import axios from 'axios';
 
@@ -63,7 +63,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo}  className="hero" alt="logo" />
           <h2>Word Wall!</h2>
           <input className="word-input" type="text"  ref="wordInput"  onChange={this.handleChange.bind(this)}/>
           <a className="add-btn" href="#" onClick={this.handleClick.bind(this)}>
