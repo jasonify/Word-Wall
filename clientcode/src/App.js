@@ -10,19 +10,29 @@ class App extends Component {
       words: []
     };
   }
-  componentDidMount() {
 
+
+  addWord(word) {
+    var self = this;
     axios.post('http://localhost:3030/api/word', {
-      word: 'Flintstone333'
+      word: word 
     })
     .then(function (response) {
       console.log('res post', response);
+      var words = response.data.words;
+      console.log("words", words);
+      self.setState({words})
     })
     .catch(function (error) {
       console.log('error', error);
     });
 
+  }
+  componentDidMount() {
 
+    this.addWord("wazza");
+
+    /*
     axios.get('http://localhost:3030/api/words')
     .then(res => {
       console.log('res', res);
@@ -31,13 +41,14 @@ class App extends Component {
       // console.log('posts', posts);
       this.setState({ words });
     });
+    */
   }
 
   render() {
     const wordEls = this.state.words.map((word, index) => {
-                                         const key = "word-"+word+index;
-                                         console.log(key);
-                                         return <span key={key}> {word} </span>
+      const key = "word-"+word+index;
+      console.log(key);
+      return <span className='word' key={key}> {word} </span>
     });
     // for(var ii = 0; ii < 
     return (
