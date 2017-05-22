@@ -35,6 +35,10 @@ Maybe intead use busboy to parse multipart forms?
 
 ### Helpful Resources:
 
+
+## Going with this thing:
+https://github.com/facebookincubator/create-react-app
+
 https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters
 https://socket.io/get-started/chat/
 https://expressjs.com/en/starter/static-files.html
@@ -44,6 +48,5 @@ https://www.robinwieruch.de/minimal-react-webpack-babel-setup/
 
 
 
-https://github.com/facebookincubator/create-react-app
 npm install -g create-react-app
 
