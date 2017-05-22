@@ -64,15 +64,15 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Word Wall /</h2>
-          <input type="text"  ref="wordInput"  onChange={this.handleChange.bind(this)}/>
-          <a href="#" onClick={this.handleClick.bind(this)}>
-            Add Word
+          <h2>Word Wall!</h2>
+          <input className="word-input" type="text"  ref="wordInput"  onChange={this.handleChange.bind(this)}/>
+          <a className="add-btn" href="#" onClick={this.handleClick.bind(this)}>
+              Add Word
           </a>
         </div>
-        <p className="App-intro">
+        <div className="words">
           {wordEls}
-        </p>
+        </div>
       </div>
     );
   }
